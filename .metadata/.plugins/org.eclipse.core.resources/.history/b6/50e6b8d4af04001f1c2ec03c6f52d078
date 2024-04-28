@@ -1,0 +1,5 @@
+package com.quize.entity;
+
+public class Question {
+
+}

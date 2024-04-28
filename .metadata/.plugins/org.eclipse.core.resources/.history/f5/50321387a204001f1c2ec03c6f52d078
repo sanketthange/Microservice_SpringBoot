@@ -1,0 +1,26 @@
+package com.question.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.question.entity.Question;
+import com.question.service.QuestionServiceImp;
+
+@RestController
+public class QuestionController {
+
+	private QuestionServiceImp questionServiceImp;
+
+	@Autowired
+	public QuestionController(QuestionServiceImp questionServiceImp) {
+		super();
+		this.questionServiceImp = questionServiceImp;
+	}
+	
+	@PutMapping("/question")
+	public void save(@ResponseBody Question question) {
+		questionServiceImp.save(question);
+	}
+}

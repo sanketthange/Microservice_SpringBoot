@@ -1,0 +1,27 @@
+package com.quize.service;
+
+import java.util.List;
+
+import com.quize.entity.Quize;
+
+public class QuizeServiceImp implements QuizeService {
+
+	@Override
+	public void add(Quize quize) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public List<Quize> findAll() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Quize findById(int id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

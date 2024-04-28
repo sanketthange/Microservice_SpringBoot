@@ -1,0 +1,38 @@
+package com.quize.service;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.quize.entity.Quize;
+import com.quize.repository.QuizeRepository;
+
+public class QuizeServiceImp implements QuizeService {
+
+	private QuizeRepository quizeRepository;
+	
+	
+	@Autowired
+	public QuizeServiceImp(QuizeRepository quizeRepository) {
+		this.quizeRepository = quizeRepository;
+	}
+
+	@Override
+	public void add(Quize quize) {
+		
+       quizeRepository.save(quize);
+	}
+
+	@Override
+	public List<Quize> findAll() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Quize findById(int id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

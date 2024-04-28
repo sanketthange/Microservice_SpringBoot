@@ -1,0 +1,11 @@
+package com.quize.repository;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.quize.entity.Quize;
+
+public interface QuizeRepository extends JpaRepository<Quize, Integer> {
+	
+	
+
+}

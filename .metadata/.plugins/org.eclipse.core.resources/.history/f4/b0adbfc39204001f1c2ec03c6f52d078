@@ -1,0 +1,5 @@
+package com.quize.service;
+
+public interface QuizeService {
+
+}

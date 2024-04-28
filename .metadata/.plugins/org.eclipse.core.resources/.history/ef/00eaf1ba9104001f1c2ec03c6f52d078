@@ -1,0 +1,12 @@
+package com.quize.entity;
+
+import jakarta.persistence.Entity;
+
+@Entity
+public class Quize {
+	
+	private id;
+	
+	private quizeName;
+
+}

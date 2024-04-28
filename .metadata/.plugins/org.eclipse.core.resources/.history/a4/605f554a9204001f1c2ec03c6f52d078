@@ -1,0 +1,5 @@
+package com.quize.repository;
+
+public class QuizeRepository {
+
+}
